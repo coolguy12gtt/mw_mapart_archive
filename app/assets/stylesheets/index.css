@@ -1,0 +1,64 @@
+
+* {
+  font-family: "Courier New";
+  background-color: #b8e7ff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.servers a {
+  text-decoration: none;
+  color: black;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.servers a:hover {
+  color:#b8e7ff ;
+  border-color: black;
+  background-color: black;
+}
+
+.servers {
+  text-align: center;
+  font-size: 30px;
+  word-spacing: 40px;
+}
+
+.description {
+  text-align: center;
+  font-size: 30px;
+  width: 70%;
+  padding: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.search {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 50px;
+  width: 300px;
+  align-items: center;
+}
+
+.searchName {
+  padding: 20px;
+}
+
+.searchArtist {
+  padding: 20px;
+}

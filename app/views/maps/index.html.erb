@@ -1,0 +1,42 @@
+<%= stylesheet_link_tag "index" %>
+
+<h1>Welcome to the online Minewind Mapart Archive!</h1>
+
+
+<p class="description">The Minewind Minecraft server is composed of nine subservers each with their own collection of mapart. Click on any server below to view its mapart archive.</p>
+
+
+<div class="servers">
+  <a href="/arch">Arch</a>
+  <a href="/aqua">Aqua</a>
+  <a href="/azure">Azure</a>
+  <a href="/era">Era</a>
+  <a href="/moon">Moon</a>
+  <a href="/sun">Sun</a>
+  <a href="/terra">Terra</a>
+  <a href="/throne">Throne</a>
+  <a href="/spawn">Spawn</a>
+</div>
+
+<div class="search">
+<h3>Advanced Search: </h3>
+<div class="searchName">
+  <%= form_tag "/searchName", method: "GET" do %>
+
+    <%= label_tag :search_by_name %>
+    <%= text_field_tag :search_by_name, params[:search_by_name] %>
+
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
+
+<div class="searchArtist">
+  <%= form_tag "/searchArtist", method: "GET" do %>
+
+    <%= label_tag :search_by_artist %>
+    <%= text_field_tag :search_by_artist, params[:search_by_artist] %>
+
+    <%= submit_tag "Search" %>
+  <% end %>
+</div>
+</div>

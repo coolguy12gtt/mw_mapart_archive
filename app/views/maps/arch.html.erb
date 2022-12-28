@@ -1,0 +1,15 @@
+<p> This is the page for arch maps!</p>
+
+<ul>
+  <% @maps.each do |map| %>
+    <li>
+      <%= map.name %>
+      <%= map.artist %>
+      <%= map.public_private %>
+      <%= map.date %>
+    <li>
+    <%= image_tag "arch/1.png" %>
+  <% end %>
+</ul>
+
+

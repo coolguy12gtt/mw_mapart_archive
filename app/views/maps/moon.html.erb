@@ -1,0 +1,32 @@
+<a href="/maps"><h1>Welcome to the Moon Mapart Archive</h1></a>
+
+<div class="stats">
+  <h2>Contains: <%= @maps.last.num %> maparts</h3>
+</div>
+
+<ul>
+  <% @maps.each do |map| %>
+  <div class="flex">
+    <div class="data">
+    <li>
+     <p>Name: <%= map.name %></p>
+    </li>
+    <li>
+     <p>Artist: <%= map.artist %></p>
+    </li>
+    <li>
+     <p>Description: <%= map.description %></p>
+    </li>
+    <li>
+     <p>Server: <%= map.server %></p>
+    </li>
+    <li>
+     <p>Date of Completion: <%= map.date %></p>
+    </li>
+    </div>
+    <div class="image">
+    <%= image_tag map.img, height: '360', width: '640' %>
+    </div>
+  </div>
+  <% end %>
+

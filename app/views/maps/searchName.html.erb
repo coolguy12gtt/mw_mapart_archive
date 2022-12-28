@@ -1,0 +1,30 @@
+
+<h1> Search results by map name: </h1>
+
+<ul>
+  <% @maps.each do |map| %>
+  <div class="flex">
+    <div class="data">
+    <li>
+     <p>Name: <%= map.name %></p>
+    </li>
+    <li>
+     <p>Artist: <%= map.artist %></p>
+    </li>
+    <li>
+     <p>Description: <%= map.description %></p>
+    </li>
+    <li>
+     <p>Server: <%= map.server %></p>
+    </li>
+    <li>
+     <p>Date of Completion: <%= map.date %></p>
+    </li>
+    </div>
+    <div class="image">
+    <%= image_tag map.img, height: '360', width: '640' %>
+    </div>
+  </div>
+  <% end %>
+</ul>
+
