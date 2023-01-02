@@ -1,0 +1,13 @@
+
+<ul>
+<div class="grid">
+  <% @maps.each do |map| %>
+    <div class="image">
+    <% if map.img? %>
+      <%= image_tag map.img, height: '90', width: '180' %>
+    <% end %>
+    </div>
+  <% end %>
+</div>
+</ul>
+
