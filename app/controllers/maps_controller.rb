@@ -4,7 +4,7 @@ class MapsController < ApplicationController
   end
 
   def arch
-    @maps = Map.where(server: "arch")
+    @maps = Map.where(server: "Arch")
   end
 
   def aqua
@@ -45,6 +45,10 @@ class MapsController < ApplicationController
 
   def searchArtist
     @maps = Map.where("artist LIKE ?", "%" + params[:search_by_artist] + "%")
+  end
+
+  def mapwall
+    @maps = Map.all
   end
   
 end

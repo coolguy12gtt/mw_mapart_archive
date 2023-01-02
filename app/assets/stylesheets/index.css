@@ -13,6 +13,12 @@ h2 {
   text-align: center;
 }
 
+.info {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+
 .servers a {
   text-decoration: none;
   color: black;

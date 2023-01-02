@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   get "/spawn", to: "maps#spawn"
   get "/searchName", to: "maps#searchName"
   get "/searchArtist", to: "maps#searchArtist"
+  get "/info", to: "maps#info"
+  get "/mapwall", to: "maps#mapwall"
 end
